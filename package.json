@@ -35,6 +35,7 @@
     "preact": "^10.1.0",
     "preact-render-to-string": "^5.1.2",
     "react": "github:preact-compat/react#1.0.0",
+    "react-color": "^2.19.3",
     "react-dom": "github:preact-compat/react-dom#1.0.0"
   }
 }

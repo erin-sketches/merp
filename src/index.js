@@ -1,4 +1,5 @@
 import { render } from 'preact';
+import { SketchPicker } from 'react-color';
 import { useState } from 'preact/hooks';
 
 const N = (props) => {
@@ -37,7 +38,6 @@ const Vits = (props) => {
             <hr className="smol"></hr>
         </div>
     );
-    console.log(rows,els,props.values);
     return (
         <div>
             {els}
@@ -45,8 +45,34 @@ const Vits = (props) => {
     )
 }
 const App = () => {
-
+    const [color,setColor] = useState('black');
+    const [bgcolor,setbgColor] = useState('white');
+    const upd_color = (color) => {
+        let root = document.documentElement;
+        root.style.setProperty('--color',color.hex);
+        setColor(color.hex);
+    }
+    const upd_bgcolor = (color) => {
+        let root = document.documentElement;
+        root.style.setProperty('--bg-color',color.hex);
+        setbgColor(color.hex);
+    }
     return (
+    <div>
+      <h3>Background Color | Color</h3>
+      <div style={{display:'flex'}}>
+          <div>
+              <h4>Background color</h4>
+              <SketchPicker color={bgcolor} onChange={upd_bgcolor} />
+          </div>
+          <div>
+              <h4>Text color</h4>
+              <SketchPicker color={color} onChange={upd_color} />
+          </div>
+      </div>
+      <h3>Fax</h3>
+      <div></div>
+
       <div className="border">
         <div className="header">
             Nutrition Facts  
@@ -88,6 +114,7 @@ const App = () => {
                 * Percent Daily Values are based on a 2,000 calorie diet. Your Daily Values may be higher or lower depending on your calorie needs.
             </div>
       </div>
+    </div>
     )
 
 }
