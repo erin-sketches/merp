@@ -1,0 +1,64 @@
+:root {
+    --color: black;
+    --bg-color: white;
+}
+html {
+    background-color: var(--bg-color);
+    font-family: 'Arial';
+}
+.border {
+    border: 2px;
+    border-color: var(--color);
+    max-width: 175px;
+    padding: 4px;
+    border-style: solid;
+}
+div.body {
+    line-height: 1px;
+}
+.header {
+    font-size: 15pt;
+    font-weight: bolder;
+    color: var(--color);
+}
+.serving {
+    color: var(--color);
+    line-height: 8pt;
+}
+.n {
+    font-weight: normal;
+    font-size: 8pt;
+}
+.nr {
+    font-weight: normal;
+    font-size: 8pt;
+    text-align: right;
+    display: block;
+}
+.b {
+    font-weight: bold;
+    font-size: 8pt;
+}
+.br {
+    font-weight: bold;
+    font-size: 8pt;
+    text-align: right;
+    display: block;
+}
+.s {
+    font-size: 6pt;
+}
+
+hr.thicc {
+    height: 7pt;
+    background-color: var(--color);
+}
+hr {
+    height: 3pt;
+    background-color: var(--color);
+    border-width: 0px;
+}
+hr.smol {
+    height: 0.25pt;
+    background-color: var(--color);
+}
