@@ -79,10 +79,10 @@ const App = () => {
         </div>
         <div className="serving">
             <div>
-                <N>Serving Size 1 cup (228g)</N>
+                <N>Serving Size 1 cup (3.1 MDa)</N>
             </div>
             <div>
-                <N>Serving Per Container 2</N>
+                <N>Serving Per Container 8</N>
             </div>
         </div>
         <div className="body">
@@ -91,27 +91,33 @@ const App = () => {
             <hr className="smol"></hr>
             <div>
                 <B>Calories</B>
-                <N> 260</N>
-                <NR>Calories from Fat 120</NR>
+                <N> 1.1e-7</N>
+                <NR>Calories from Fat 0</NR>
             </div>
             <hr></hr>
             <BR>% Daily Value*</BR>
             <Rows values={{rows:[
-                ['Total Fat','13g','20%'],
-                ['Cholesterol','30mg','10%'],
-                ['Sodium','660mg','10%'],
-                ['Total Carbohydrate','31g','10%'],
-                ['Protein','5g','']
+                ['Hydrogen','2.1MDa','100%'],
+                ['Helium','1.0MDa','50%'],
+                ['Total Fat','0g','0%'],
+                ['Cholesterol','0mg','0%'],
+                ['Sodium','0mg','0%'],
+                ['Total Carbohydrate','0g','0%'],
+                ['Protein','0g','']
             ]}}>
             </Rows>
             <hr className="thicc"></hr>
             <Vits values={{rows:[
-                'Vitamin A 4%',
-                'Calcium 15%'
+                'Carbon 0.1%',
+                'Nitrogen 0.1%',
+                'Magnesium 0.1%',
+                'Potassium 0.1%',
+                'Calcium 0.1%',
+                'Iron 0.1%',
             ]}} />
             </div>
             <div className='s'>
-                * Percent Daily Values are based on a 2,000 calorie diet. Your Daily Values may be higher or lower depending on your calorie needs.
+                * Percent Daily Values are based on a 2e-7 calorie diet. Your Daily Values may be higher or lower depending on your calorie needs.
             </div>
       </div>
     </div>
